@@ -1,0 +1,22 @@
+<p>admin works!</p>
+<div class="container">
+    <table class="table table-bordered table-inverse">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Family</th>
+      </tr>
+      <tr *ngFor="let student of studentList">
+        <td>
+          {{student.id}}
+        </td>
+        <td>
+          {{student.name}}
+        </td>
+        <td>
+          {{student.family}}
+        </td>
+      </tr>
+    </table>
+  </div>
+  
