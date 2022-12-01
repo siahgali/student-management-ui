@@ -16,4 +16,10 @@ export class StudentService {
   getStudents() {
     return this.http.get('/server/students', httpOptions)
   }
+
+  createStudent(student:any) {
+    let body = JSON.stringify(student);
+    return this.http.post('/server/student', body, httpOptions);
+  }
+
 }
